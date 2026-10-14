@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111827"><meta name="description" content="DataForge synthetic data generation and evaluation studio">
+<title>About DataForge | DataForge</title><link rel="stylesheet" href="/assets/css/style.css">
+<script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script><script defer src="/assets/js/api.js"></script><script defer src="/assets/js/common.js"></script></head>
+<body><header class="topbar"><a class="brand" href="/"><span class="brand-mark">D</span>DataForge</a><nav class="nav" aria-label="Main navigation"><a class="nav-link" href="/" data-page="/">Home</a><a class="nav-link" href="/dashboard.html" data-page="/dashboard.html">Dashboard</a><a class="nav-link" href="/upload.html" data-page="/upload.html">Dataset Workspace</a><a class="nav-link" href="/generate.html" data-page="/generate.html">Generate Data</a><a class="nav-link" href="/privacy.html" data-page="/privacy.html">Privacy Lab</a><a class="nav-link" href="/evaluation.html" data-page="/evaluation.html">Evaluation</a><a class="nav-link" href="/reports.html" data-page="/reports.html">Reports</a><a class="nav-link" href="/about.html" data-page="/about.html">About</a></nav><div class="top-actions"><button class="btn ghost small" data-reset type="button">Reset</button></div></header>
+
+ <main class="container">
+  <div class="page-heading">
+    <div>
+      <div class="eyebrow">Website guide</div>
+      <h1>About DataForge</h1>
+      <p>Explore the website's components, tools, and features.</p>
+    </div>
+  </div>
+
+  <article class="panel about-block">
+    <h2>Welcome to DataForge</h2>
+    <p>
+      DataForge provides a workspace for preparing datasets, generating synthetic
+      records, evaluating data quality, examining privacy-risk indicators, and
+      exporting results. This guide explains the purpose of each page and its
+      available components.
+    </p>
+
+<h2>1. Home</h2>
+<p>
+  The Home page introduces the main functions available on the website.
+  It helps users navigate to the dataset workspace, generation tools,
+  privacy analysis, evaluation results, and reports.
+</p>
+
+<h2>2. Dashboard</h2>
+<p>
+  The Dashboard provides a quick overview of the current data-processing
+  workflow. It can present dataset information, generation status, recent
+  activity, and available evaluation summaries, depending on the data
+  currently stored by the application.
+</p>
+<ul class="list-clean">
+  <li><b>Dataset overview:</b> Displays available information about the dataset.</li>
+  <li><b>Generation status:</b> Helps users identify the current workflow stage.</li>
+  <li><b>Metric summaries:</b> Provides a quick view of available evaluation results.</li>
+</ul>
+
+<h2>3. Dataset Workspace</h2>
+<p>
+  The Dataset Workspace is used to prepare the data that will be used for
+  synthetic generation.
+</p>
+<ul class="list-clean">
+  <li><b>CSV Upload:</b> Allows users to select a supported CSV file.</li>
+  <li><b>Sample Datasets:</b> Provides example data for exploring the workflow.</li>
+  <li><b>Dataset Profiling:</b> Examines columns, data types, missing values,
+    and basic statistical information.</li>
+  <li><b>Schema-Based Data:</b> Supports creating demonstration data from a
+    defined column structure, where available.</li>
+</ul>
+
+<h2>4. Generate Data</h2>
+<p>
+  The Generate Data page creates synthetic records using patterns and
+  statistical characteristics from the selected dataset.
+</p>
+<ul class="list-clean">
+  <li><b>Generation Settings:</b> Configures the available options for generating records.</li>
+  <li><b>Numerical Sampling:</b> Generates numerical values using statistical sampling.</li>
+  <li><b>Categorical Sampling:</b> Uses observed category frequencies to generate categorical values.</li>
+  <li><b>Constraints:</b> Applies supported numeric limits or other configured conditions.</li>
+  <li><b>Candidate Iteration:</b> Allows users to generate and compare alternative candidates when supported.</li>
+  <li><b>Data Preview:</b> Helps users inspect the generated records before export.</li>
+</ul>
+
+<h2>5. Privacy Lab</h2>
+<p>
+  The Privacy Lab presents checks that help identify possible privacy risks
+  in synthetic data. It may examine record overlap and other supported
+  heuristic indicators.
+</p>
+<ul class="list-clean">
+  <li><b>Risk Indicators:</b> Summarizes the privacy checks performed by the application.</li>
+  <li><b>Overlap Checks:</b> Identifies potential similarities between source and generated records when implemented.</li>
+  <li><b>Risk Interpretation:</b> Helps users understand which results may need further review.</li>
+</ul>
+<p>
+  These checks are not a guarantee of anonymity and do not replace formal
+  privacy techniques such as differential privacy.
+</p>
+
+<h2>6. Evaluation</h2>
+<p>
+  The Evaluation page helps users assess how closely the synthetic dataset
+  represents selected characteristics of the source dataset.
+</p>
+<ul class="list-clean">
+  <li><b>Statistical Comparison:</b> Compares supported numerical and categorical distributions.</li>
+  <li><b>Missing-Value Analysis:</b> Compares missing-value patterns where applicable.</li>
+  <li><b>Visualizations:</b> Uses charts to make comparisons easier to understand.</li>
+  <li><b>Evaluation Metrics:</b> Presents the quality measurements calculated by the application.</li>
+</ul>
+<p>
+  Evaluation results describe the metrics implemented in the website;
+  they should not be interpreted as proof that every property of the
+  original dataset has been preserved.
+</p>
+
+<h2>7. Reports</h2>
+<p>
+  The Reports page organizes available generation and evaluation
+  information so users can review the results of their workflow.
+</p>
+<ul class="list-clean">
+  <li><b>Evaluation Summary:</b> Presents available quality results.</li>
+  <li><b>Privacy Summary:</b> Shows the privacy-check outcomes that were recorded.</li>
+  <li><b>Synthetic Data Passport:</b> Documents available dataset details,
+    generation settings, and evaluation information.</li>
+  <li><b>Export Options:</b> Provides supported report or dataset downloads.</li>
+</ul>
+
+<h2>8. Navigation Bar</h2>
+<p>
+  The navigation bar provides links to Home, Dashboard, Dataset Workspace,
+  Generate Data, Privacy Lab, Evaluation, Reports, and About. It allows
+  users to move between the website's main sections.
+</p>
+
+<h2>9. Reset Button</h2>
+<p>
+  The Reset button provides the website's configured reset action. Depending
+  on its implementation, it may clear the current workflow state or return
+  the interface to its initial state. Review the confirmation message, if
+  displayed, before proceeding.
+</p>
+
+<h2>10. Notifications and Validation</h2>
+<p>
+  Status messages help users understand whether an operation succeeded,
+  whether input data is valid, or whether an error occurred. Validation
+  messages can help identify unsupported files, missing inputs, or
+  incorrect settings.
+</p>
+
+<h2>Typical Website Workflow</h2>
+<div class="steps">
+  <div class="step">
+    <span class="step-num">01</span>
+    <b>Prepare</b>
+    <span class="muted">Upload a CSV or select available sample data.</span>
+  </div>
+  <div class="step">
+    <span class="step-num">02</span>
+    <b>Generate</b>
+    <span class="muted">Configure the options and create synthetic records.</span>
+  </div>
+  <div class="step">
+    <span class="step-num">03</span>
+    <b>Evaluate</b>
+    <span class="muted">Review quality metrics and visual comparisons.</span>
+  </div>
+  <div class="step">
+    <span class="step-num">04</span>
+    <b>Review & Export</b>
+    <span class="muted">Inspect privacy indicators and download available results.</span>
+  </div>
+</div>
+
+<h2>Important Usage Note</h2>
+<p>
+  Synthetic data is generated data, not automatically anonymous data.
+  Review the quality metrics and privacy indicators before using or sharing
+  generated records. Avoid uploading sensitive information unless the
+  environment is appropriate and authorized for that data.
+</p>
+
+  </article>
+</main>

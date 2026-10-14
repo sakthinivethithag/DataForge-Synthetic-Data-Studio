@@ -1,0 +1,4 @@
+document.addEventListener("DOMContentLoaded",()=>{
+ async function run(){try{const r=await DF.post("/api/privacy/check",{});document.querySelector("#privacyResults").hidden=false;document.querySelector("#riskLevel").textContent=r.risk_level;document.querySelector("#riskPct").textContent=(r.risk_indicator_pct??"—")+"% heuristic indicator";document.querySelector("#checks").innerHTML=r.checks.map(c=>`<article class="check-row"><div><h3>${DF.esc(c.name)}</h3><p>${DF.esc(c.explanation)}</p>${c.columns?.length?`<p>Flagged columns: ${c.columns.map(DF.esc).join(", ")}</p>`:""}</div><strong>${c.matches}</strong></article>`).join("");document.querySelector("#privacyNote").textContent=r.note}catch(e){DF.notify(e.message,"error")}}
+ document.querySelector("#runPrivacy").addEventListener("click",run);run();
+});
